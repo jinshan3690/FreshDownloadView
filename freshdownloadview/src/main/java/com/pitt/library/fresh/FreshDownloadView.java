@@ -458,12 +458,12 @@ public class FreshDownloadView extends View {
         final Path dst = mDst;
         dst.reset();
         //to fix hardware speedup bug
-        dst.lineTo(0, 0);
+//        dst.lineTo(0, 0);
         pathMeasure1.getSegment(0.2f * mErrorPathLengthLeft, mErrorRightDegree * mErrorPathLengthLeft, dst, true);
         canvas.drawPath(dst, publicPaint);
         dst.reset();
         //to fix hardware speedup bug
-        dst.lineTo(0, 0);
+//        dst.lineTo(0, 0);
         pathMeasure2.getSegment(0.2f * mErrorPathLengthRight, mErrorLeftDegree * mErrorPathLengthRight, dst, true);
         canvas.drawPath(dst, publicPaint);
     }
