@@ -439,7 +439,7 @@ public class FreshDownloadView extends View {
                 final Path dst = mDst;
                 dst.reset();
                 //to fix hardware speedup bug
-                dst.lineTo(0, 0);
+//                dst.lineTo(0, 0);
                 pathMeasure1.getSegment(mMarkOkstart * mMarkOklength, (mMarkOkstart + mMarkOkdegree) * mMarkOklength, dst, true);
                 canvas.drawPath(dst, publicPaint);
                 break;
@@ -454,7 +454,7 @@ public class FreshDownloadView extends View {
             final float progress = mProgress;
             drawText(canvas, progress);
         }
-        publicPaint.setColor(Color.WHITE);
+        publicPaint.setColor(getProgressColor());
         final Path dst = mDst;
         dst.reset();
         //to fix hardware speedup bug
